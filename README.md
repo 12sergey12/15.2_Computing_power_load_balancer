@@ -18,19 +18,21 @@
  - Положить в бакет файл с картинкой.
  - Сделать файл доступным из интернета.
  
-[Бакет]()
+[Бакет](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/bucket.tf)
 
-![monitoring]()
+![monitoring](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/images/15.2_bucket.png)
 
 скрин картинки в бакете
 
-![monitoring]()
+![monitoring](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/images/15.2_ycl.net.png)
 
 
-Полученная ссылка для скачивания 
+Полученная ссылка для скачивания:
 
+```
 "http://1netology-bucket.storage.yandexcloud.net/lake-in-mountains.jpg"
 
+```
 
 
 2. Создать группу ВМ в public подсети фиксированного размера с шаблоном LAMP и веб-страницей, содержащей ссылку на картинку из бакета:
@@ -40,20 +42,19 @@
  - Разместить в стартовой веб-странице шаблонной ВМ ссылку на картинку из бакета.
  - Настроить проверку состояния ВМ.
 
-[Instance Group]()
+[Instance Group](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/instance-group.tf)
 
 Скрин Instance Group
  
-![monitoring]()
+![monitoring](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/images/15.2_inst_gr.png)
 
 Скрин Target Group
 
-![monitoring]()
+![monitoring](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/images/15.2_targ_gr.png)
 
 Скрин картинки на инстансах из Instance Group 
 
-![monitoring]()
-
+![monitoring](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/images/15.2_inst.png)
 
 
 3. Подключить группу к сетевому балансировщику:
@@ -61,11 +62,11 @@
  - Создать сетевой балансировщик.
  - Проверить работоспособность, удалив одну или несколько ВМ.
 
-[load-balancer]()
+[load-balancer](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/lb.tf)
 
 Проверка работоспособности при удалении одной машины
 
-![monitoring]()
+![monitoring](https://github.com/12sergey12/15.2_Computing_power_load_balancer/blob/main/images/15.2_l_bal.png)
 
 [terraform]()
 
